@@ -31,7 +31,7 @@ python protein_sequence_analysis.py
 ## File Structure
 This repository contains the following files:
 
-- **protein_sequence_analysis.py:** The main Python script for peptide sequence analysis and binding affinity predictions.
+- **peptideML.py:** The main Python script for peptide sequence analysis and binding affinity predictions.
 - **Generation/data.csv:** The CSV file containing the peptide sequences and their binding affinities.
 
 ## Results
