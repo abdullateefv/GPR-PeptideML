@@ -1,4 +1,4 @@
-# README.md for Protein Sequence Analysis
+# ML Guided Protein Sequence Analysis
 This README file provides a comprehensive overview of the Python script designed to process, analyze, and model peptide sequence data for binding affinity predictions.
 
 ## Dependencies
