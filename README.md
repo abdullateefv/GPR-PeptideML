@@ -1,5 +1,5 @@
 # ML Guided Protein Sequence Analysis
-This README file provides a comprehensive overview of the Python script designed to process, analyze, and model peptide sequence data for binding affinity predictions.
+This repository contains a Python script that uses Gaussian Process Regression (GPR) with a custom kernel for the analysis of peptide sequences.
 
 ## Dependencies
 To run this script, make sure you have the following dependencies installed in your environment:
