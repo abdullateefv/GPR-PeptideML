@@ -1,13 +1,14 @@
 # ML Guided Protein Sequence Analysis
-This repository contains a Python script that uses Gaussian Process Regression (GPR) with a custom kernel for the analysis of peptide sequences.
+This repository contains a reinforcement learning Python script that uses Gaussian Process Regression (GPR) with a custom kernel for the analysis of peptide sequences.
 
 ## Dependencies
 To run this script, make sure you have the following dependencies installed in your environment:
 - Python 3.8 or higher
-- Matplotlib
-- NumPy
-- Pandas
-- Scikit-Learn
+- Conda
+  - Matplotlib
+  - NumPy
+  - Pandas
+  - Scikit-Learn
 
 ## Description of the Script
 This script utilizes **'GaussianProcessRegressor'** from Scikit-Learn library to model and predict binding affinities of peptide sequences from a given dataset. The script also introduces a custom sequence kernel that is used to compute the similarity between different peptide sequences.
