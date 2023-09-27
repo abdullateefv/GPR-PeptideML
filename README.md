@@ -1,9 +1,12 @@
 # ML Guided Protein Sequence Analysis
 This repository contains a reinforcement learning Python script that uses Gaussian Process Regression (GPR) with a custom kernel for the analysis of peptide sequences.
 
+![Output](output.png)
+
 ## Dependencies
 To run this script, make sure you have the following dependencies installed in your environment:
 - Python 3.8 or higher
+- PyRosetta
 - Conda
   - Matplotlib
   - NumPy
@@ -20,23 +23,10 @@ This script utilizes **'GaussianProcessRegressor'** from Scikit-Learn library to
 
 3. **Model Training and Prediction:** The script trains a Gaussian Process Regressor on the peptide sequence dataset and uses the model to make binding affinity predictions.
 
-4. **Results Visualization:** The script plots a graph comparing actual vs. predicted binding affinities and also calculates the correlation coefficient.
-
-## Running the Script
-The script uses a CSV file data.csv located in the Generation directory as its input. Make sure that this file is in the correct path before running the script.
-
-```bash
-python protein_sequence_analysis.py
-```
-
+4. **Reinforcement:** The trained model is used to make predictions on a sample of the vast peptide sequence space-- the most uncertain predictions are queued to be evaluated through _in silico_ simulation in PyRosetta, added to the training dataset and reinforced.
+   
 ## File Structure
-This repository contains the following files:
-
-- **peptideML.py:** The main Python script for peptide sequence analysis and binding affinity predictions.
-- **Generation/data.csv:** The CSV file containing the peptide sequences and their binding affinities.
-
-## Results
-The output of the script will be a plot displayed on the screen, showing the correlation between actual and predicted binding affinities. The plot also includes a calculated correlation coefficient for a better understanding of the model's performance.
+**'Data'** contains the training/testing/validation dataset used in model execution. **'VEGFR-ML'** contains the Regressor kernel files in __modelFiles.py__ and the reinforcement/training loop in __main.py__
 
 ## Future Work
 Future enhancements to this script could include additional feature extraction techniques, testing alternative machine learning models, and providing more robust statistical analysis of the model's predictions.
